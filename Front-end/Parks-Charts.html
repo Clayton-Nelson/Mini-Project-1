@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parks Charts</title>
+    <script src="./Main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div class="item-1">
+          <img
+            class="image"
+            src="../Assets/Park logo.PNG"
+            alt="Logo of Park website"
+          />
+        </div>
+        <div class="item-2">
+          <label class="hamburger-menu">
+            <input type="checkbox" />
+          </label>
+          <aside class="sidebar">
+            <nav>
+              <a href="Parks-Locations.html" class="links">Locations</a>
+              <a href="Parks-Charts.html" class="links">Charts</a>
+            </nav>
+          </aside>
+        </div>
+      </div>
+      <div class="item-3">
+        <p class="title">Park Charts</p>
+      </div>
+      <div class="chart-results">
+        <div class="descriptionContainer">
+          <h1>Ammount of Parks per State</h1>
+          <p>
+            This bar chart provides a visual representation of the number of
+            parks in various states. The X-axis displays the quantity of parks,
+            while the Y-axis represents the corresponding states. Each bar
+            corresponds to a state, with its height indicating the number of
+            parks in that state. This chart allows for a quick comparison of
+            park distribution across different regions, making it easy to
+            identify states with more or fewer parks.
+          </p>
+        </div>
+        <div class="parkContainer">
+          <canvas id="parkChart"></canvas>
+        </div>
+        <div class="descriptionContainer">
+          <h1>Largest Parks Size in Sqaured Kilometers per State</h1>
+          <p>
+            This bar chart illustrates the size in square kilometers of the
+            largest park in various states. The X-axis displays the size values,
+            while the Y-axis represents the respective states. Each bar
+            corresponds to a state, with its height reflecting the size of the
+            largest park within that state. This chart offers a clear visual
+            comparison of the varying park sizes across different regions,
+            enabling you to identify which state boasts the largest natural
+            reserves.
+          </p>
+        </div>
+        <div class="parkContainer">
+          <canvas id="sizeChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

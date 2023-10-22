@@ -1,0 +1,334 @@
+@font-face {
+  font-family: comfortaa;
+  src: url("../Assets/Comfortaa-VariableFont_wght.ttf");
+}
+
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  border-radius: 30px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: start;
+  background-color: white;
+}
+
+.results-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+}
+
+.head {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.item-1 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  float: left;
+}
+
+.item-2 {
+  flex: 1;
+  display: flex;
+  background-color: white;
+  padding-right: 30px;
+  justify-content: flex-end;
+}
+
+.item-3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  translate: 0 -30px;
+  width: 500px;
+  justify-content: space-around;
+}
+
+.title {
+  translate: 0 -30px;
+  font-family: comfortaa;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+:root {
+  --card-width: 200px;
+  --title-size: 16px;
+  --card-text-align: center;
+  --card-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: var(--card-width);
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 7px black;
+}
+
+.card-picture img {
+  width: var(--card-width);
+  height: 100px;
+  border-radius: 23px 23px 0px 0px;
+  border-style: none none solid none;
+}
+
+.card-name {
+  font-size: var(--title-size);
+  text-align: var(--card-text-align);
+  text-decoration: underline;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  margin-top: 4px;
+}
+
+.card-address {
+  text-align: var(--card-text-align);
+  margin-top: 12px;
+  font-family: var(--card-font);
+}
+
+.card-state {
+  text-align: var(--card-text-align);
+  margin-top: 6px;
+  font-weight: bold;
+  font-family: var(--card-font);
+}
+
+.links {
+  font-family: comfortaa;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  font-size: 20px;
+}
+
+body {
+  background: no-repeat url("../Assets/background.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 600px;
+  min-height: 200px;
+  text-align: center;
+  margin: 20px;
+}
+
+.descriptionContainer h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parkContainer {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+.controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px;
+}
+
+.empty-div {
+  flex: 1;
+}
+
+.pagination {
+  flex: 1;
+  text-align: center;
+}
+
+.pagination button {
+  color: black;
+  padding: 4px 12px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.pagination button.active {
+  background-color: gray;
+  color: white;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.cards-per-page {
+  display: flex;
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  align-items: center;
+}
+
+.cards-per-page button {
+  color: black;
+  padding: 4px 12px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.cards-per-page button.active {
+  background-color: gray;
+  color: white;
+}
+
+.cards-per-page button:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.head img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.chart-results {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  padding: 20px;
+}
+
+:root {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --hamburger-margin: 50px;
+  --foreground: #333;
+  --background: white;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu {
+  flex: 1;
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  position: absolute;
+  top: var(--hamburger-margin);
+  right: var(--hamburger-margin);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  flex: 2;
+  transition: opacity var(--animation-timing);
+  opacity: 0;
+  margin-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 10px);
+  background-color: var(--foreground);
+  color: var(--background);
+  text-align: right;
+  max-width: 150px;
+  padding: 10px;
+  padding-right: 20px;
+  height: fit-content;
+  border-radius: 25px;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: opacity var(--animation-timing);
+  opacity: 100%;
+  pointer-events: all;
+}

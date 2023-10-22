@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parks</title>
+    <script src="./Main.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <template id="card-template">
+      <div class="card">
+        <div class="card-picture"></div>
+        <div class="card-name"></div>
+        <div class="card-address"></div>
+        <div class="card-state"></div>
+      </div>
+    </template>
+
+    <div class="container">
+      <div class="head">
+        <div class="item-1">
+          <img
+            class="image"
+            src="../Assets/Park logo.PNG"
+            alt="Logo of Park website"
+          />
+        </div>
+        <div class="item-2">
+          <label class="hamburger-menu">
+            <input type="checkbox" />
+          </label>
+          <aside class="sidebar">
+            <nav>
+              <a href="Parks-Locations.html" class="links">Locations</a>
+              <a href="Parks-Charts.html" class="links">Charts</a>
+            </nav>
+          </aside>
+        </div>
+      </div>
+
+      <div class="item-3">
+        <p class="title">Park Locations</p>
+        <div class="search-container">
+          <select
+            id="refine-search-input"
+            name="States"
+            onchange="filterAndPrintByState()"
+          >
+            <option value="empty">Refine Search...</option>
+            <option value="South Australia">South Australia</option>
+            <option value="New South Whales">New South Whales</option>
+            <option value="Victoria">Victoria</option>
+            <option value="Queensland">Queensland</option>
+            <option value="Western Australia">Western Australia</option>
+            <option value="Northern Territory">Northern Territory</option>
+            <option value="Tasmania">Tasmania</option>
+            <option value="Australian Capital Territory">
+              Australian Capital Territory
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="results-container">
+        <div class="results" id="cards"></div>
+        <div class="controls">
+          <div class="empty-div"></div>
+          <div class="pagination" id="pagination"></div>
+          <div class="cards-per-page" id="cards-per-page">
+            <p>Parks Per Page:</p>
+            <button onclick="changeCardsPerPage(9, 1)">9</button>
+            <button onclick="changeCardsPerPage(18, 2)">18</button>
+            <button onclick="changeCardsPerPage(32, 3)">32</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
