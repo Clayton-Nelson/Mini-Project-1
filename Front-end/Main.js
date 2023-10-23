@@ -20,7 +20,7 @@ let cardsPerPage;
 async function fetchData() {
   try {
     const response = await fetch(
-      "https://mocki.io/v1/e6da1aa9-447d-4623-8eb8-1c8490fda80c"
+      "https://mocki.io/v1/07f8ff17-a636-4119-a020-5af738040280"
     );
 
     if (!response.ok) {
